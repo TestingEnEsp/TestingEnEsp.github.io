@@ -136,35 +136,34 @@
         </div>
         <div id="sendmessage">Your message has been sent. Thank you!</div>
         <div id="errormessage"></div>
-        <form method="post" action="https://docs.google.com/forms/d/e/1FAIpQLSdjPqDr6uYzG_e4bZvFMcd-x-E_Jt8Z6JueCTwBEJwEEXEOkQ/viewform?" role="form" class="contactForm" id="gform">
-          <div class="col-md-6 col-sm-6 col-xs-12 left">
-            <div class="form-group">
-              <input type="text" name="entry.2005620554" class="form-control form" id="name" placeholder="Nombre"
-                     data-rule="minlen:4" data-msg="Por favor, ingrese al menos 4 caracteres."/>
-              <div class="validation"></div>
-            </div>
-            <div class="form-group">
-              <input type="email" class="form-control" name="entry.1045781291" id="email" placeholder="Email"
-                     data-rule="email" data-msg="Por favor, ingrese un email valido. "/>
-              <div class="validation"></div>
-            </div>
-          </div>
-          <div class="col-md-6 col-sm-6 col-xs-12 right">
-            <div class="form-group">
-                        <textarea class="form-control" name="entry.839337160" rows="5" data-rule="required"
+            <form method="post" action="https://formspree.io/testingenesp+landing@gmail.com" role="form" class="contactForm">
+                <div class="col-md-6 col-sm-6 col-xs-12 left">
+                    <div class="form-group">
+                        <input type="text" name="name" class="form-control form" id="name" placeholder="Nombre"
+                               data-rule="minlen:4" data-msg="Por favor, ingrese al menos 4 caracteres."/>
+                        <div class="validation"></div>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" name="_replyto" id="email" placeholder="Email"
+                               data-rule="email" data-msg="Por favor, ingrese un email valido. "/>
+                        <div class="validation"></div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-12 right">
+                    <div class="form-group">
+                        <textarea class="form-control" name="mensaje" rows="5" data-rule="required"
                                   data-msg="Por favor, ingrese su consulta." placeholder="Mensaje"></textarea>
-              <div class="validation"></div>
-            </div>
-          </div>
-
-          <div class="col-xs-12">
-            <!-- Button -->
-            <button type="submit" id="submit" name="submitted" value="Send"
-                    class="form contact-form-button light-form-button oswald light">Enviar
-            </button>
-          </div>
-        </form>
-        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(true) {}"></iframe>
+                        <div class="validation"></div>
+                    </div>
+                </div>
+				<input type="hidden" name="_next" value="https://testingenesp.github.io/" />
+                <div class="col-xs-12">
+                    <!-- Button -->
+                    <button type="submit" id="submit" name="submit" value="Send"
+                            class="form contact-form-button light-form-button oswald light">Enviar
+                    </button>
+                </div>
+            </form>
       </div>
     </div>
   </section>
