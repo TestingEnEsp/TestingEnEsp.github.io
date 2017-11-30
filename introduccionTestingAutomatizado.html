@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Testing en Esp - Introduccion Testing Automatizado</title>
+    <meta name="description" content="Introduccion Testing Automatizado con WebDriver">
+    <meta name="keywords"
+          content="Testing, Automation, WebDriver, Selenium, Training, Cursos, tester, software, josepablosarco">
+
+    <link rel="stylesheet" type="text/css"
+          href="https://fonts.googleapis.com/css?family=Open+Sans|Candal|Alegreya+Sans">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/imagehover.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/plans_style.css">
+    <link href="css/jquery.classycountdown.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<!--Navigation bar-->
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html"><span>Testing en </span>Español</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#feature">Acerca del Curso</a></li>
+                <li><a href="#contenido">Contenido</a></li>
+                <li><a href="#cuentaRegresiva">Proximo Encuentro</a></li>
+                <li><a href="#testimonios">Testimonios</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!--/ Navigation bar-->
+<!--Banner-->
+<div class="banner">
+    <div class="bg-color">
+        <div class="container">
+            <div class="row">
+                <div class="banner-text text-center">
+                    <div class="text-border">
+                        <h2 class="text-dec">Introducción al Testing Automatizado Con WebDriver</h2>
+                    </div>
+                </div>
+                <div class="columns" id="planes">
+                    <ul class="price">
+                        <li class="header">Basico</li>
+                        <li class="grey">U$D 20.00</li>
+                        <li>Videos y Ejercicios en Google Classroom</li>
+                        <li><strike>Curso Online Grupal</strike></li>
+                        <li><strike>Curso Online Individual</strike></li>
+                        <li class="grey"><a href="registro/IntroBasico.html" class="button">Anotarme!</a></li>
+                    </ul>
+                </div>
+
+                <div class="columns">
+                    <ul class="price">
+                        <li class="header" style="background-color:#4CAF50">Pro</li>
+                        <li class="grey">U$D 60.00</li>
+                        <li>Videos y Ejercicios en Google Classroom</li>
+                        <li>Curso Online Grupal</li>
+                        <li><strike>Curso Online Individual</strike></li>
+                        <li class="grey"><a href="registro/IntroPro.html" class="button">Anotarme!</a></li>
+                    </ul>
+                </div>
+
+                <div class="columns">
+                    <ul class="price">
+                        <li class="header">Premium</li>
+                        <li class="grey">U$D 160.00</li>
+                        <li>Videos y Ejercicios en Google Classroom</li>
+                        <li><strike>Curso Online Grupal</strike></li>
+                        <li>Curso Online Individual</li>
+                        <li class="grey"><a href="registro/IntroPremium.html" class="button">Anotarme!</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--/ Banner-->
+<!--Feature-->
+<section id="feature" class="section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="header-section text-center">
+                <h2>Acerca del Curso</h2>
+                <p>Vas a poder aprender los distintos aspectos del testing automatizado.Conceptos teóricos necesarios para entender como y porque aplicarlo.<br>
+                También vas a poder conocer como aplicar Selenium como herramienta de Testing automatizado y realizar distintos ejercicios prácticos para aprender a interactuar con una aplicación de la manera mas eficiente. Por ultimo nos centraremos en WebDriver para poder aplicar lo aprendido  y poder realizar nuestros primeros tests en Java y Python!</p>
+                <hr class="bottom-line">
+            </div>
+            <div class="feature-info">
+                <div class="fea">
+                    <div class="col-md-4" style="width:25%">
+                        <div class="heading pull-right">
+                            <h4>Destinatarios</h4>
+                            <p>Cualquier persona inetresada en el mundo IT. No es necesario saber programar o tener conocimientos previos en programación.</p>
+                        </div>
+                        <div class="fea-img pull-left">
+                            <i class="fa fa-users"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="fea">
+                    <div class="col-md-4" style="width:25%">
+                        <div class="heading pull-right">
+                            <h4>Google Classroom</h4>
+                            <p>Todo el contenido del curso queda almacenado en este servicio de google para tu posterior consulta. <br>
+                                Ademas podras ver el contenido desde cualquier dispositivo.</p>
+                        </div>
+                        <div class="fea-img pull-left">
+                            <i class="fa fa-google"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="fea">
+                    <div class="col-md-4" style="width:25%">
+                        <div class="heading pull-right">
+                            <h4>Codigo</h4>
+                            <p>Al finalizar el curso vas poder contar con todo el codigo Java y Python presentado durante el mismo.</p>
+                        </div>
+                        <div class="fea-img pull-left">
+                            <i class="fa fa-github"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="fea">
+                    <div class="col-md-4" style="width:25%">
+                        <div class="heading pull-right">
+                            <h4>Certificado</h4>
+                            <p>Un certificado sera entregado a quienes cumplan con las evaluaciones y actividades del curso.</p>
+                        </div>
+                        <div class="fea-img pull-left">
+                            <i class="fa fa-trophy"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--/ feature-->
+<!--Course Content -->
+<section id="contenido" class="section-padding">
+    <div class="container">
+        <div class="header-section text-center">
+            <h2>Contenido</h2>
+            <p>El curso se divide en 4 modulos para una mejor comprension. A continuacion puedes ver las tematicas de cada uno de los modulos.</p>
+            <hr class="bottom-line">
+        </div>
+        <div class="panel-group" role="tablist" id="bootstrap-overrides">
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="collapseListGroupHeading1">
+                    <h4 class="panel-title">
+                        <a class="collapsed" data-toggle="collapse" href="#collapseListGroup1" aria-expanded="false"
+                           aria-controls="collapseListGroup1">
+                            <i class="fa fa-chevron-down"></i>
+                            Modulo 1
+
+                        </a>
+                        <i class="fa fa-clock-o pull-right">&nbsp;2hs</i>
+                    </h4>
+
+                </div>
+                <div id="collapseListGroup1" class="panel-collapse collapse" role="tabpanel"
+                     aria-labelledby="collapseListGroupHeading1">
+                    <ul class="list-group">
+                        <li class="list-group-item">¿Por qué testing Automatizado? ¿Por que no?</li>
+                        <li class="list-group-item">¿Que es testing Automatizado?</li>
+                        <li class="list-group-item">Testing Automatizado vs Testing Manual</li>
+                        <li class="list-group-item">Pirámide de Pruebas</li>
+                        <li class="list-group-item">¿Cómo seleccionar los tests a automatizar?</li>
+                        <li class="list-group-item">¿Cómo evitar el fracaso del proyecto de pruebas automatizadas?</li>
+                        <li class="list-group-item">Introducción al mundo Selenium</li>
+                    </ul>
+                </div>
+                <div class="panel-heading" role="tab" id="collapseListGroupHeading2">
+                    <h4 class="panel-title">
+                        <a class="collapsed" data-toggle="collapse" href="#collapseListGroup2" aria-expanded="false"
+                           aria-controls="collapseListGroup1">
+                            <i class="fa fa-chevron-down"></i>
+                            Modulo 2
+                        </a>
+                        <i class="fa fa-clock-o pull-right">&nbsp;2hs</i>
+                        <!--<i class="fa fa-file-code-o pull-right"></i>-->
+                    </h4>
+                </div>
+                <div id="collapseListGroup2" class="panel-collapse collapse" role="tabpanel"
+                     aria-labelledby="collapseListGroupHeading1">
+                    <ul class="list-group">
+                        <li class="list-group-item">Conceptos generales</li>
+                        <li class="list-group-item">Test vs Test Suite</li>
+                        <li class="list-group-item">Teoría de Locators</li>
+                        <li class="list-group-item">Práctica de Locators</li>
+                        <li class="list-group-item">Frameworks de Automatización</li>
+                        <li class="list-group-item">Introducción Page Object</li>
+                    </ul>
+                </div>
+                <div class="panel-heading" role="tab" id="collapseListGroupHeading3">
+                    <h4 class="panel-title">
+                        <a class="collapsed" data-toggle="collapse" href="#collapseListGroup3" aria-expanded="false"
+                           aria-controls="collapseListGroup1">
+                            <i class="fa fa-chevron-down"></i>
+                            Modulo 3
+                        </a>
+                        <i class="fa fa-clock-o pull-right">&nbsp;2hs</i>
+                    </h4>
+                </div>
+                <div id="collapseListGroup3" class="panel-collapse collapse" role="tabpanel"
+                     aria-labelledby="collapseListGroupHeading1">
+                    <ul class="list-group">
+                        <li class="list-group-item">Mi primer Test Automatizado (Java y Python)</li>
+                        <li class="list-group-item">Implicit Waits vs Explicit Waits (Java y Python)</li>
+                        <li class="list-group-item">Testing Crossbowsing (Java y Python)</li>
+                        <li class="list-group-item">Como ejecutar acciones más comunes (Java y Python)</li>
+                    </ul>
+                </div>
+                <div class="panel-heading" role="tab" id="collapseListGroupHeading4">
+                    <h4 class="panel-title">
+                        <a class="collapsed" data-toggle="collapse" href="#collapseListGroup4" aria-expanded="false"
+                           aria-controls="collapseListGroup1">
+                            <i class="fa fa-chevron-down"></i>
+                            Modulo 4
+                        </a>
+                        <i class="fa fa-clock-o pull-right">&nbsp;2hs</i>
+                    </h4>
+                </div>
+                <div id="collapseListGroup4" class="panel-collapse collapse" role="tabpanel"
+                     aria-labelledby="collapseListGroupHeading1">
+                    <ul class="list-group">
+                        <li class="list-group-item">Aplicando Patrón Page Object a nuestro tests (Java y Python)</li>
+                        <li class="list-group-item">Bases para un Framework (Java y Python)</li>
+                        <li class="list-group-item">Corriendo nuestras pruebas en la nube (Java y Python)</li>
+                        <li class="list-group-item">Ecosistema de aplicaciones (Java y Python)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--/Course Content -->
+<!--Organisations-->
+<section id="organisations" class="section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                    <div class="orga-stru">
+                        <h3>100%</h3>
+                        <p>en Español</p>
+                        <i class="fa fa-volume-up"></i>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                    <div class="orga-stru">
+                        <h3>8</h3>
+                        <p>HS</p>
+                        <i class="fa fa-clock-o"></i>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                    <div class="orga-stru">
+                        <h3>100%</h3>
+                        <p>Satisfaccion</p>
+                        <i class="fa fa-thumbs-o-up"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="detail-info">
+                    <hgroup>
+                        <h3 class="det-txt">No te decidis?</h3>
+                    </hgroup>
+                    <p class="det-p">Este curso esta pensado para quienes quieren empezar a apuntar su carrera hacia el testing automatizado,<br>
+                        rol muy solicitado hoy en dia y con grandes posibilidades de crecimiento, no lo dudes mas y hace el cambio que estas buscando!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--/ Organisations-->
+<!--work-shop-->
+<section id="cuentaRegresiva" class="section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="header-section text-center">
+                <h2>Proximo Encuentro Online Grupal</h2>
+                <p>Esta es la cuenta regresiva hacia nuestro proximo encuentro Online Grupal. Para participar podes anotarte en el <a href="#planes">Plan PRO</a>.
+                    <br>No te confies que el tiempo vuela y anotate!</p>
+                <hr class="bottom-line">
+            </div>
+            <div class="content">
+                <div class="main">
+                    <div id="countdown9" class="ClassyCountdownDemo"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--/ work-shop-->
+<!--Faculity member-->
+<section id="testimonios" class="section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="header-section text-center">
+                <h2>Testimonios</h2>
+                <p>A continuación algunas recomendaciones por parte de los que ya participaron.</p>
+                <hr class="bottom-line">
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4">
+                <div class="pm-staff-profile-container">
+                    <div class="pm-staff-profile-details text-center">
+                        <p class="pm-staff-profile-name">German F.</p>
+                        <p class="pm-staff-profile-title">QA Manual</p>
+                        <i class="fa fa-quote-left fa-3x fa-pull-left" aria-hidden="true"></i>
+                        <p class="pm-staff-profile-bio">El curso me impresionó en múltiples niveles. Se lo recomendaré a todos los que conozco. Aprendi mucho durante este curso.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4">
+                <div class="pm-staff-profile-container">
+                    <div class="pm-staff-profile-details text-center">
+                        <p class="pm-staff-profile-name">Leonardo S.</p>
+                        <p class="pm-staff-profile-title">QA Lead</p>
+                        <i class="fa fa-quote-left fa-3x fa-pull-left" aria-hidden="true"></i>
+                        <p class="pm-staff-profile-bio">Me encantó el curso, es justo lo que estaba buscando.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4">
+                <div class="pm-staff-profile-container">
+                    <div class="pm-staff-profile-details text-center">
+                        <p class="pm-staff-profile-name">Matias R.</p>
+                        <p class="pm-staff-profile-title">QA Manual</p>
+
+                        <i class="fa fa-quote-left fa-3x fa-pull-left" aria-hidden="true"></i>
+                        <p class="pm-staff-profile-bio">Durante el encuentro OnLine pude obtener respuestas a dudas que tenia y el formato del curso me parecio muy interesante.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--/ Faculity member-->
+
+<!--Contact-->
+<section id="contact" class="section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="header-section text-center">
+                <h2>Contacto</h2>
+                <p>No estas muy seguro de que curso tomar? Queres saber algo mas sobre lo dictado en alguno de los cursos?
+                    <br> Contactate y te responderemos a la brevedad.</p>
+                <hr class="bottom-line">
+            </div>
+            <div id="sendmessage">Your message has been sent. Thank you!</div>
+            <div id="errormessage"></div>
+            <form method="post" action="https://formspree.io/testingenesp+intro@gmail.com" role="form" class="contactForm">
+                <div class="col-md-6 col-sm-6 col-xs-12 left">
+                    <div class="form-group">
+                        <input type="text" name="name" class="form-control form" id="name" placeholder="Nombre"
+                               data-rule="minlen:4" data-msg="Por favor, ingrese al menos 4 caracteres."/>
+                        <div class="validation"></div>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" name="_replyto" id="email" placeholder="Email"
+                               data-rule="email" data-msg="Por favor, ingrese un email valido. "/>
+                        <div class="validation"></div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-12 right">
+                    <div class="form-group">
+                        <textarea class="form-control" name="mensaje" rows="5" data-rule="required"
+                                  data-msg="Por favor, ingrese su consulta." placeholder="Mensaje"></textarea>
+                        <div class="validation"></div>
+                    </div>
+                </div>
+
+                <div class="col-xs-12">
+                    <!-- Button -->
+                    <button type="submit" id="submit" name="submit" value="Send"
+                            class="form contact-form-button light-form-button oswald light">Enviar
+                    </button>
+                </div>
+            </form>
+
+        </div>
+    </div>
+</section>
+<!--/ Contact-->
+<!--Footer-->
+<footer id="footer" class="footer">
+    <div class="container text-center">
+        <!-- End newsletter-form -->
+        <ul class="social-links">
+            <li><a href="https://twitter.com/TestingEnEspa"><i class="fa fa-twitter fa-fw fa-3x"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/josepablosarco/"><i class="fa fa-linkedin fa-fw fa-3x"></i></a></li>
+            <li><a href="https://josepablosarco.wordpress.com"><i class="fa fa-wordpress fa-fw fa-3x"></i></a></li>
+        </ul>
+        ©2016 Mentor Theme. All rights reserved
+        <div class="credits">
+            Designed by <a href="https://bootstrapmade.com/">BootstrapMade.com</a>
+        </div>
+    </div>
+</footer>
+<!--/ Footer-->
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.easing.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/custom.js"></script>
+<script src="contactform/contactform.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.knob.js"></script>
+<script src="js/jquery.throttle.js"></script>
+<script src="js/jquery.classycountdown.js"></script>
+<script>
+                                        $(document).ready(function() {
+                                            $('#countdown9').ClassyCountdown({
+                                                end: '1519891200',
+                                                now: $.now()/1000,
+                                                labels: true,
+                                                style: {
+                                                    element: "",
+                                                    textResponsive: .5,
+                                                    days: {
+                                                        gauge: {
+                                                            thickness: .10,
+                                                            bgColor: "rgba(0,0,0,0)",
+                                                            fgColor: "#1abc9c",
+                                                            lineCap: 'round'
+                                                        },
+                                                        textCSS: 'font-weight:300; color:#000000;'
+                                                    },
+                                                    hours: {
+                                                        gauge: {
+                                                            thickness: .10,
+                                                            bgColor: "rgba(0,0,0,0)",
+                                                            fgColor: "#05BEF6",
+                                                            lineCap: 'round'
+                                                        },
+                                                        textCSS: ' font-weight:300; color:#000000;'
+                                                    },
+                                                    minutes: {
+                                                        gauge: {
+                                                            thickness: .10,
+                                                            bgColor: "rgba(0,0,0,0)",
+                                                            fgColor: "#8e44ad",
+                                                            lineCap: 'round'
+                                                        },
+                                                        textCSS: ' font-weight:300; color:#000000;'
+                                                    },
+                                                    seconds: {
+                                                        gauge: {
+                                                            thickness: .10,
+                                                            bgColor: "rgba(0,0,0,0)",
+                                                            fgColor: "#f39c12",
+                                                            lineCap: 'round'
+                                                        },
+                                                        textCSS: ' font-weight:300; color:#000000;'
+                                                    }
+
+                                                },
+                                                onEndCallback: function() {
+                                                    console.log("Time out!");
+                                                }
+                                            });
+                                        });
+
+</script>
+</body>
+
+</html>
